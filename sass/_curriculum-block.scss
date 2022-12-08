@@ -1,0 +1,91 @@
+.outcome {
+    margin: -90px 0 160px;
+    text-align: center;
+    font-size: 30px;
+    color: #011949;
+    @include bp(tablet-sm){
+        font-size: 20px;
+        margin: 40px 3px;
+    }
+    .title {
+        font-family: $AvenirBold;
+        margin-bottom: 30px;
+        &::before {
+            content: url("./images/arrow-1.png");
+            padding-right: 100px;
+            @include bp(tablet-sm){
+                display: none;
+            }
+        }
+        &::after {
+            content: url("./images/arrow-2.png");
+            padding-left: 100px;
+            @include bp(tablet-sm){
+                display: none;
+            }
+        }
+    }
+    .content {
+        max-width: 1040px;
+        margin: 0 auto;
+        font-family: $AvenirRegular;
+    }
+}
+
+.personal {
+    color: #011949;
+    text-align: center;
+    @include bp(tablet-sm){
+        padding: 0 3px;
+    }
+    .main-title {
+        font-family: $YoungSerif;
+        font-weight: bold;
+    }
+    .card-holder {
+        font-family: $AvenirRegular;
+        margin: 50px 100px;
+        font-size: 17px;
+        @include bp(tablet-sm){
+            margin: 20px 0;
+        }
+        img {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.past-students {
+    padding: 70px 0;
+    color: #011949;
+    @include bp(tablet-sm){
+        padding: 70px 3px;
+    }
+    .main-title {
+        text-align: center;
+        font-size: 30px;
+        font-family: $AvenirBold;
+    }
+    .logos {
+        padding-bottom: 65px;
+        @include bp(tablet-sm){
+            text-align: center;
+            padding: 0;
+        }
+        img {
+            padding: 50px 0;
+            @include bp(mobile){
+                padding: 20px 0;
+            }
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+            @include bp(tablet-sm){
+                text-align: center;
+            }
+        }
+    }
+}

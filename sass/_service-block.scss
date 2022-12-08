@@ -1,0 +1,131 @@
+.apply-block {
+    p {
+        font-family: $AvenirBold;
+        font-size: 27px;
+        max-width: 781px;
+        text-align: center;
+        margin: 0 auto 20px;
+        @include bp(tablet-sm){
+            font-size: 22px;
+        }
+    }
+    a {
+        font-family: $AvenirRegular;
+        display: block;
+        margin: 0 auto;
+        color: white;
+        max-width: 781px;
+        line-height: 96px;
+        background-color: #FC8A78;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.joinus { 
+    padding: 80px 0;
+    color: #011949;
+    @include bp(tablet-sm){
+        padding: 40px 3px 0;
+    }
+    h1 {
+        font-family: $YoungSerif;
+        text-align: center;
+    }
+    img {
+        @include bp(tablet-sm){
+            width: 100%;
+        }
+    }
+    .row {
+        padding-top: 60px;
+        @include bp(tablet-sm){
+            padding-top: 30px;
+        }
+        .content-box {
+            padding-top: 15px;
+            font-family: $AvenirRegular;
+            @include bp(tablet-sm){
+                padding: 40px 0;
+            }
+            .title {
+                font-family: $AvenirBold;
+                font-size: 23px;
+            }
+            p {
+                font-size: 17px;
+            }
+            a {
+                color: #FC8A78;
+                font-size: 17px;
+                text-decoration: none;
+                border-bottom: 1px solid #FC8A78;
+            }
+        }
+        @include bp(tablet-sm){
+            .single-block {
+                display: none;
+            }
+        }
+    }
+}
+
+.programdates {
+    padding: 45px 0 100px;
+    color: #011949;
+    @include bp(tablet-sm){
+        padding: 45px 3px;
+    }
+    .row {
+        padding-bottom: 70px;
+        @include bp(tablet-sm){
+            padding-bottom: 30px;
+        }
+        h1 {
+            font-family: $YoungSerif;
+            max-width: 450px;
+            margin: 30px auto;
+            @include bp(tablet-sm){
+                max-width: none;
+            }
+            @include bp(mobile){
+                margin: 15px 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.thankyou {
+    padding: 80px 0;
+    background-color: #011949;
+    color: #F9F6F1;
+    @include bp(tablet-sm){
+        padding: 40px 3px;
+    }
+    .content {
+        font-family: $AvenirRegular;
+        max-width: 81%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 28px;
+        @include bp(tablet-sm){
+            font-size: 20px;
+            max-width: none;
+        }
+        .title {
+            font-size: 30px;
+            font-family: $AvenirBold;
+        }
+        a {
+            text-decoration: none;
+            color: #FC8A78;
+            border-bottom: 1px solid #FC8A78;
+        }
+    }
+
+}

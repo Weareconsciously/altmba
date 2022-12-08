@@ -1,0 +1,88 @@
+.top-four {
+    display: flex;
+    color: #F9F6F1;
+    height: 500px;
+    @include bp(tablet-sm){
+        display: none;
+    }
+    .left-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        width: 50%;
+        height: 500px;
+        padding-left: 120px;
+        background-color: blue;
+        .content {
+            @media screen and (min-width: 1400px) {
+            min-width: 615px;
+            }
+            @media screen and (max-width: 1400px) and (min-width: 1200px) {
+                min-width: 515px;
+            }
+        }
+    }
+    .right-div {
+        width: calc(50% + 75px);
+        padding-right: 120px;
+        background-color: #011949;
+        border-left: 100px solid blue;
+        border-bottom: 500px solid transparent;
+        .content-div {
+            height: 500px;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media screen and (max-width: 1200px){
+                padding-left: 30px;
+            }
+        }
+    }
+    .content {
+        padding: 50px 0;
+        h1 {
+            font-family: $YoungSerif;
+        } 
+        p {
+            font-family: $AvenirRegular;
+            font-size: 17px;
+            max-width: 450px;
+        }
+    }
+}
+.top-four-mob {
+    display: none;
+    @include bp(tablet-sm){
+        display: block;
+    }
+    .left-div, .right-div {
+        padding: 40px 0;
+        color: white;
+        @include bp(mobile){
+            padding: 40px 15px;
+        }
+    }
+    .left-div {
+        background-color: blue;
+    }
+    .right-div {
+        background-color: #011949;
+    }
+    .content {
+        max-width: 696px;
+        margin: 0 auto;
+        @include bp(mobile){
+            max-width: 540px;
+        }
+        h1 {
+            font-family: $YoungSerif;
+        } 
+        p {
+            font-family: $AvenirRegular;
+            font-size: 17px;
+            max-width: 450px;
+        }
+    }
+}
